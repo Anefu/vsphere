@@ -27,5 +27,5 @@ module "rancher" {
   rancher_version            = var.rancher_version
   rancher_server_dns         = var.rancher_server_dns
   admin_password             = var.rancher_admin_password
-  workload_cluster_name      = var.cluster_name
+  workload_cluster_name      = var.workload_cluster_name
 }

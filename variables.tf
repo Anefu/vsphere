@@ -110,7 +110,7 @@ variable "workload_kubernetes_version" {
 }
 
 # Required
-variable "cluster_name" {
+variable "workload_cluster_name" {
   type        = string
   description = "Name for created custom workload cluster"
 }

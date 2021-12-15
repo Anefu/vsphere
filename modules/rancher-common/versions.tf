@@ -16,6 +16,10 @@ terraform {
       source  = "loafoe/ssh"
       version = "1.0.1"
     }
+    rke = {
+      source = "rancher/rke"
+      version = "1.2.5"
+    }
   }
   required_version = ">= 1.0.0"
 }

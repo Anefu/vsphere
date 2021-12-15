@@ -24,3 +24,7 @@ provider "rancher2" {
   # ca_certs  = data.kubernetes_secret.rancher_cert.data["ca.crt"]
   token_key = rancher2_bootstrap.admin.token
 }
+
+provider "rke" {
+  log_file = "rke_debug.log"
+}

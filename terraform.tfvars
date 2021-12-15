@@ -15,4 +15,4 @@ allow_unverified_ssl = false
 
 rancher_server_dns     = ""
 rancher_admin_password = ""
-cluster_name           = ""
+workload_cluster_name  = ""

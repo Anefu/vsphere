@@ -8,3 +8,5 @@
 .terraform/providers/registry.terraform.io/loafoe/ssh/1.0.1/linux_amd64/README.md
 .terraform/providers/registry.terraform.io/loafoe/ssh/1.0.1/linux_amd64/terraform-provider-ssh_v1.0.1
 .terraform/providers/registry.terraform.io/rancher/rancher2/1.21.0/linux_amd64/terraform-provider-rancher2_v1.21.0
+rke_debug.log
+.terraform/providers/registry.terraform.io/rancher/rke/1.2.5/linux_amd64/terraform-provider-rke_v1.2.5
