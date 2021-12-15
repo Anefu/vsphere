@@ -1,0 +1,1 @@
+See variables.tf file for list of required variables to configure.
