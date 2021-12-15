@@ -1,0 +1,22 @@
+vsphere_vcenter = ""
+vsphere_user = ""
+vsphere_password = ""
+datacenter_name = ""
+datastore_name = ""
+compute_cluster_name = ""
+vm_name = ""
+num_cpus = 0
+memory = 0
+guest_id = ""
+public_network = ""
+private_network = ""
+disk_size = 0
+disk_label = ""
+
+public_ip = ""
+private_ip = ""
+ssh_username = ""
+ssh_private_key_pem = ""
+rancher_server_dns = ""
+rancher_admin_password = ""
+cluster_name = ""
