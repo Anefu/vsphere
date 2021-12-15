@@ -1,28 +1,28 @@
 # Variables for rancher common module
 
 # Required
-variable "node_public_ip" {
-  type        = string
-  description = "Public IP of compute node for Rancher cluster"
-}
+# variable "node_public_ip" {
+#   type        = string
+#   description = "Public IP of compute node for Rancher cluster"
+# }
 
-variable "node_internal_ip" {
-  type        = string
-  description = "Internal IP of compute node for Rancher cluster"
-  default     = ""
-}
-
-# Required
-variable "node_username" {
-  type        = string
-  description = "Username used for SSH access to the Rancher server cluster node"
-}
+# variable "node_internal_ip" {
+#   type        = string
+#   description = "Internal IP of compute node for Rancher cluster"
+#   default     = ""
+# }
 
 # Required
-variable "ssh_private_key_pem" {
-  type        = string
-  description = "Private key used for SSH access to the Rancher server cluster node"
-}
+# variable "node_username" {
+#   type        = string
+#   description = "Username used for SSH access to the Rancher server cluster node"
+# }
+
+# # Required
+# variable "ssh_private_key_pem" {
+#   type        = string
+#   description = "Private key used for SSH access to the Rancher server cluster node"
+# }
 
 variable "rancher_kubernetes_version" {
   type        = string
@@ -70,4 +70,28 @@ variable "windows_prefered_cluster" {
   type        = bool
   description = "Activate windows supports for the custom workload cluster"
   default     = false
+}
+
+variable "datacenter_name" {
+  type = string
+  description = "Name of the datacenter to install rancher into"
+}
+
+variable "vsphere_vcenter" {
+  type = string
+  description = "IP address/DNS of the vCenter"
+}
+variable "vsphere_user" {
+  type = string
+  description = "Email or customer ID of vCenter account"
+}
+
+variable "vsphere_password" {
+  type = string
+  description = "vCenter account password"
+}
+
+variable "public_network" {
+  type = string
+  description = "Name of public network in the datacenter"
 }

@@ -17,11 +17,6 @@ data "vsphere_network" "public" {
   datacenter_id = "${data.vsphere_datacenter.dc.id}"
 }
 
-data "vsphere_network" "private" {
-  name          = "${var.private_network}"
-  datacenter_id = "${data.vsphere_datacenter.dc.id}"
-}
-
 resource "vsphere_virtual_machine" "standalone" {
   name             = var.vm_name
   resource_pool_id = "${data.vsphere_compute_cluster.cluster.resource_pool_id}"
@@ -33,10 +28,6 @@ resource "vsphere_virtual_machine" "standalone" {
 
   network_interface {
     network_id = "${data.vsphere_network.public.id}"
-  }
-
-  network_interface {
-    network_id = "${data.vsphere_network.private.id}"
   }
 
   disk {

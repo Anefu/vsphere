@@ -32,7 +32,7 @@ variable "disk_size" {
 
 variable "vsphere_vcenter" {
     type = string
-    description = "IP address of the vCenter Server"
+    description = "IP address/DNS of the vCenter Server"
 }
 
 variable "vsphere_user" {
@@ -48,11 +48,6 @@ variable "vsphere_password" {
 variable "public_network" {
   type = string
   description = "Name of public network in the datacenter"
-}
-
-variable "private_network" {
-    type = string
-    description = "Name of private network in the datacenter"
 }
 
 variable "vm_name" {

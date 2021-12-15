@@ -33,6 +33,23 @@ resource "rancher2_cluster" "quickstart_workload" {
       plugin  = local.rke_network_plugin
       options = local.rke_network_options
     }
+    cloud_provider {
+      vsphere_cloud_provider {
+        virtual_center {
+                datacenters = var.datacenter_name
+                name = var.vsphere_vcenter
+                password = var.vsphere_password
+                user = var.vsphere_user
+        }
+        workspace {
+          datacenter = var.datacenter_name
+          server = var.vsphere_vcenter
+        }
+        network {
+          publlic_network = var.public_network
+        }
+    }
+  }
     kubernetes_version = var.workload_kubernetes_version
   }
   windows_prefered_cluster = var.windows_prefered_cluster
